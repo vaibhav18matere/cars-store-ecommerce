@@ -10,7 +10,7 @@ const Homepage = () => {
             <div className="d-flex">
               <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
               <a href="/index.html">
-                <p className="nav-title">carGhar - E-commerce app </p>
+                <p className="nav-title">Cars Store</p>
               </a>
             </div>
             <div className="search-container d-flex">
@@ -70,25 +70,16 @@ const Homepage = () => {
             <div className="category-heading">
               <h2>Featured cars available</h2>
               <p className="text-center">
-                Book your test deive today and get 10% discount!
+                Book your test deive today and get <b>15% special discount!</b>
               </p>
             </div>
             <div className="category-item-list flex-center">
               <div className="featued-products-row">
                 <div className="category-item">
                   <div className="detailed-box-info">
-                    <h4>Model 1</h4>
-                    <p>Sports Section - Lorem ipsum, doloadiNulla, maxime?</p>
-                  </div>
-                </div>
-              </div>
-              <div className="featued-products-row">
-                <div className="category-item">
-                  <div className="detailed-box-info">
-                    <h4>Model 2</h4>
+                    <h4>Hatchback</h4>
                     <p>
-                      Vintage Section - Lorem, ipsum doloisicing uibusdam,
-                      veritatis.
+                      Most affordable range starting just from INR 4.5 Lakhs
                     </p>
                   </div>
                 </div>
@@ -96,8 +87,32 @@ const Homepage = () => {
               <div className="featued-products-row">
                 <div className="category-item">
                   <div className="detailed-box-info">
-                    <h4>Model 3</h4>
-                    <p>Royal Section - Lorem ipsum d Fugiat, expedita!</p>
+                    <h4>Sedan</h4>
+                    <p>
+                      Style, Elegance and Comfort starting just from INR 6.5
+                      Lakhs
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="featued-products-row">
+                <div className="category-item">
+                  <div className="detailed-box-info">
+                    <h4>SUV</h4>
+                    <p>
+                      Space, Safety and Speed starting just from INR 12 Lakhs
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="featued-products-row">
+                <div className="category-item">
+                  <div className="detailed-box-info">
+                    <h4>Luxury</h4>
+                    <p>
+                      Class, Comfort and elegance starting just from INR 40
+                      Lakhs
+                    </p>
                   </div>
                 </div>
               </div>
@@ -110,32 +125,32 @@ const Homepage = () => {
               <div className="footer-column1">
                 <h4 className="txt-space">Download our app</h4>
                 <p>
-                  Get the app on <b>App store</b> or <b>Play store</b>{" "}
+                  Get the app on <strong> App store</strong>
                 </p>
                 <div>
                   <img
-                    className="car-app-logo"
-                    src="../../assets/Images/car-logo.png"
+                    className="car-app-logo cursor"
+                    src="../../assets//Images//play-store.png"
                     alt="android-logo"
                   />
                   <img
-                    className="car-app-logo"
-                    src="../../assets/Images/app-store.png"
+                    className="car-app-logo cursor"
+                    src="../../assets//Images//app-store.png"
                     alt="ios-logo"
                   />
                 </div>
               </div>
-              <div className="footer-column2">
+              <div className="footer-copyright">
                 <img src="../../assets/Images/car-logo.png" alt="car-logo" />
                 <p className="text-center">Copyright © 2022 - Vaibhav Matere</p>
               </div>
-              <div className="footer-column3">
+              <div className="footer-column-links">
                 <h4 className="txt-space">Useful Links</h4>
                 <ul>
-                  <li>Coupon Codes</li>
+                  <li>Service Centres</li>
                   <li>Blogs Posts</li>
                   <li>Career Section</li>
-                  <li>Join Affiliate</li>
+                  <li>Terms and Conditions</li>
                 </ul>
               </div>
               <div className="footer-column4">
