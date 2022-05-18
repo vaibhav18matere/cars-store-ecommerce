@@ -59,7 +59,7 @@ const Homepage = () => {
             <div className="header-column">
               <img
                 className="homepage-hero-img"
-                src="../../assets/Images/car2.png"
+                src="/Images/car2.png"
                 alt="car-img"
               />
             </div>
@@ -125,23 +125,24 @@ const Homepage = () => {
               <div className="footer-column1">
                 <h4 className="txt-space">Download our app</h4>
                 <p>
-                  Get the app on <strong> App store</strong>
+                  Get the app for <strong> Android </strong> or
+                  <strong> IOS </strong> devices
                 </p>
                 <div>
                   <img
                     className="car-app-logo cursor"
-                    src="../../assets//Images//play-store.png"
+                    src="/Images/android.png"
                     alt="android-logo"
                   />
                   <img
                     className="car-app-logo cursor"
-                    src="../../assets//Images//app-store.png"
+                    src="/Images/ios.png"
                     alt="ios-logo"
                   />
                 </div>
               </div>
               <div className="footer-copyright">
-                <img src="../../assets/Images/car-logo.png" alt="car-logo" />
+                <img src="/Images/car-logo.png" alt="car-logo" />
                 <p className="text-center">Copyright © 2022 - Vaibhav Matere</p>
               </div>
               <div className="footer-column-links">
