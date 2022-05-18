@@ -9,7 +9,7 @@ const Homepage = () => {
           <ul className="navbar nav-fixed d-flex">
             <div className="d-flex">
               <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-              <a href="/index.html">
+              <a href="/">
                 <p className="nav-title">Cars Store</p>
               </a>
             </div>
@@ -24,17 +24,17 @@ const Homepage = () => {
             </div>
             <ul className="navbar-right d-flex">
               <li>
-                <a href="/cart/cart.html">
+                <a href="/">
                   <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="/wishlist/wishlist.html">
+                <a href="/">
                   <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="/user profile/user_profile.html">
+                <a href="/">
                   <img
                     src="https://picsum.photos/id/111/200/300"
                     alt="navbar-img"
@@ -47,12 +47,12 @@ const Homepage = () => {
         <div className="homepage-container">
           <div className="row">
             <div className="header-column">
-              <h4>One stop solution for all vintage cars</h4>
+              <h4>One stop solution for buying cars online, hustle free!</h4>
               <p>
-                Car Ghar is a dedicated multi-brand online car showroom. It is
-                Indias largest market place for online car shopping
+                Cars Store is a dedicated multi-brand online car showroom. It is
+                Indias largest market place for online car shopping!
               </p>
-              <a href="/product-listing/products.html">
+              <a href="/">
                 <button className="btn btn-primary">Explore Now &#8594;</button>
               </a>
             </div>
