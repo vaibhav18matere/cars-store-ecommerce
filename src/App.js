@@ -1,12 +1,11 @@
 import "./App.css";
+import Homepage from "./pages/Home/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        TOY STORE HOMEPAGE
-      </header>
-    </div>
+    <>
+      <Homepage />
+    </>
   );
 }
 

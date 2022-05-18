@@ -1,0 +1,136 @@
+.homepage-container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: auto;
+    max-width: 80rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4.375rem;
+}
+
+.header-column {
+    flex-basis: 50%;
+    min-width: 18rem;
+}
+
+.header-column img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.header-column h4 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 25px 0;
+}
+
+.featued-products-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.featued-products-row p {
+    text-align: center;
+}
+
+.category-item {
+    border-radius: 50%;
+    flex-wrap: wrap;
+    height: 11.875rem;
+    width: 11.875rem;
+    padding: 2rem 1rem 0;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    cursor: pointer;
+    box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+}
+
+.category-item-list {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.homepage-footer{
+    background-color: rgb(12,14,17);
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 3rem;
+}
+.homepage-footer p{
+    color:8a8a8a;
+}
+.homepage-footer h4{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-row{
+    display: flex;
+}
+.footer-column1, .footer-copyright, .footer-column-links .footer-column4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.car-app-logo{
+    width:100px;
+    padding: 10px;
+}
+.footer-column-links, .footer-column4{
+    padding: 10px;
+}
+.footer-column-links ul li, .footer-column4 ul li{
+    padding: 5px;
+}
+.footer-column1{
+    flex-basis:30%;
+    padding-left: 20px;
+}
+.footer-copyright{
+    flex:1;
+    text-align: center;
+}
+.footer-copyright img{
+    width:120px;
+    margin-bottom: 20px;
+}
+.footer-column-links ul li:hover{
+    cursor: pointer;
+}
+.footer-column-links, .footer-column4{
+    flex-basis: 12%;
+    text-align: center;
+}
+@media only screen and (max-width: 800px){
+    .navbar-container ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background: var(--dark);
+        width:100%;
+    }
+    .navbar-container ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+    .navbar-container u l li a{
+        color: var(--light);
+    }
+} 
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .header-column{
+        flex-basis: 100%;
+    }
+}
