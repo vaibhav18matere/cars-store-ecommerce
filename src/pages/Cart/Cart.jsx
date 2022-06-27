@@ -9,10 +9,10 @@ const Cart = () => {
           <div className="d-flex">
             <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
             <a href="/">
-              <p className="nav-title">carGhar - E-commerce app </p>
+              <p className="nav-title">Cars Store</p>
             </a>
           </div>
-          <div class="search-container d-flex">
+          <div className="search-container d-flex">
             <input
               type="text"
               name="search"

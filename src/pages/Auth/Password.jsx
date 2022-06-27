@@ -8,7 +8,7 @@ const Password = () => {
           <div className="d-flex">
             <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
             <a href="/">
-              <p className="nav-title">CarGhar - E-commerce app </p>
+              <p className="nav-title">Cars Store</p>
             </a>
           </div>
           <div className="search-container d-flex">
