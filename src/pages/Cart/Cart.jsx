@@ -44,14 +44,14 @@ const Cart = () => {
         </ul>
       </div>
       <div className="cart-container">
-        <div class="cart-main-container flex-center">
+        <div className="cart-main-container flex-center">
           <h1 className="cart-title-number">MY CART (2)</h1>
           <div className="cart-sider">
             <div className="cart-manage-item">
               <div className="cards horizontal-container">
                 <div className="card-horizontal">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://picsum.photos/id/111/200/200"
                     alt="cart-img1"
                   />
