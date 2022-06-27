@@ -154,35 +154,6 @@ const Homepage = () => {
                   <li>Terms and Conditions</li>
                 </ul>
               </div>
-              <div className="footer-column4">
-                <h4 className="txt-space">Follow us on</h4>
-                <ul>
-                  <li>
-                    <a
-                      href="https://twitter.com/vaibhav_matere"
-                      className="twitter"
-                    >
-                      Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/vaibhav18matere"
-                      className="github"
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vaibhavmatere/"
-                      className="linkedin"
-                    >
-                      LinkedIn
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
