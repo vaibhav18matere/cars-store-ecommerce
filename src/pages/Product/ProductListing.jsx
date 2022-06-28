@@ -1,6 +1,8 @@
 import React from "react";
 import "./ProductListing.css";
+import { products } from "./../../backend/db/products";
 import { Link } from "react-router-dom";
+
 const ProductListing = () => {
   return (
     <>
@@ -167,206 +169,33 @@ const ProductListing = () => {
         </div>
         <div className="content-box">
           <div className="product-container d-flex">
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
+            {products.map(({ title, price, model, category, img }) => (
+              <div className="car-card">
+                <div className="card_img">
+                  <figure>
+                    <Link to="/product">
+                      <img
+                        src="https://picsum.photos/id/111/200/300"
+                        alt="carImage"
+                      />
+                    </Link>
+                  </figure>
+                  <div className="card_info">
+                    <h3>{title}</h3>
+                    <div className="car-price-div">
+                      <span className="car-price">
+                        Price : <span className="active_item">{price}</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
+                <div className="add-cart-btn d-flex align-center font_1r">
+                  <button className="btn btn-primary flex-1">
+                    Add to cart
+                  </button>
                 </div>
               </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
-            <div className="car-card">
-              <div className="card_img">
-                <figure>
-                  <Link to="/product">
-                    <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </Link>
-                </figure>
-                <div className="card_info">
-                  <h3>Woplmh CRetro Vintage</h3>
-                  <div className="car-price-div">
-                    <span className="car-price">
-                      Price : <span className="active_item">$8000</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="add-cart-btn d-flex align-center font_1r">
-                <button className="btn btn-primary flex-1">Add to cart</button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -374,3 +203,24 @@ const ProductListing = () => {
   );
 };
 export default ProductListing;
+
+<div className="car-card">
+  <div className="card_img">
+    <figure>
+      <Link to="/product">
+        <img src="https://picsum.photos/id/111/200/300" alt="" />
+      </Link>
+    </figure>
+    <div className="card_info">
+      <h3>Woplmh CRetro Vintage</h3>
+      <div className="car-price-div">
+        <span className="car-price">
+          Price : <span className="active_item">$8000</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div className="add-cart-btn d-flex align-center font_1r">
+    <button className="btn btn-primary flex-1">Add to cart</button>
+  </div>
+</div>;
