@@ -9,6 +9,7 @@ import UserProfile from "./pages/User Profile/UserProfile";
 import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Password from "./pages/Auth/Password";
+import Error from "./pages/Error/Error";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password" element={<Password />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );
