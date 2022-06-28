@@ -48,7 +48,8 @@ const Homepage = () => {
         <div className="homepage-container">
           <div className="row">
             <div className="header-column">
-              <h4>One stop solution for buying cars online, hustle free!</h4>
+              <h4>Shipping Cars</h4>
+              <h4>Shipping Happiness</h4>
               <p>
                 Cars Store is a dedicated multi-brand online car showroom. It is
                 Indias largest market place for online car shopping!
