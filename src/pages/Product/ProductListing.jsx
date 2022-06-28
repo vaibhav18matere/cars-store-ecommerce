@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductListing.css";
+import { Link } from "react-router-dom";
 const ProductListing = () => {
   return (
     <>
@@ -7,9 +8,9 @@ const ProductListing = () => {
         <ul className="navbar nav-fixed d-flex">
           <div className="d-flex">
             <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-            <a href="/">
+            <Link to="/">
               <p className="nav-title">Cars Store</p>
-            </a>
+            </Link>
           </div>
           <div className="search-container d-flex">
             <input
@@ -20,24 +21,24 @@ const ProductListing = () => {
             />
             <i className="fa fa-search fa-2x" aria-hidden="true"></i>
           </div>
-          <ul className="navbar-right d-end">
+          <ul className="navbar-right d-flex">
             <li>
-              <a href="/">
+              <Link to="/cart">
                 <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/wishlist">
                 <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/user-profile">
                 <img
                   src="https://picsum.photos/id/111/200/300"
                   alt="navbar-img"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>
@@ -169,9 +170,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -189,9 +190,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -209,9 +210,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -229,9 +230,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -249,9 +250,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -269,9 +270,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -289,9 +290,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -309,9 +310,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -329,9 +330,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>
@@ -349,9 +350,9 @@ const ProductListing = () => {
             <div className="car-card">
               <div className="card_img">
                 <figure>
-                  <a href="/">
+                  <Link to="/product">
                     <img src="https://picsum.photos/id/111/200/300" alt="" />
-                  </a>
+                  </Link>
                 </figure>
                 <div className="card_info">
                   <h3>Woplmh CRetro Vintage</h3>

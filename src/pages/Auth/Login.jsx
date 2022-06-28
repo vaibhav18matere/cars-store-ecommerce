@@ -1,5 +1,6 @@
 import React from "react";
 import "./auth.css";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div>
@@ -7,9 +8,9 @@ const Login = () => {
         <ul className="navbar nav-fixed d-flex">
           <div className="d-flex">
             <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-            <a href="/">
+            <Link to="/">
               <p className="nav-title">Cars Store</p>
-            </a>
+            </Link>
           </div>
           <div className="search-container d-flex">
             <input
@@ -20,27 +21,24 @@ const Login = () => {
             />
             <i className="fa fa-search fa-2x" aria-hidden="true"></i>
           </div>
-          <ul className="navbar-right d-end">
-            <a href="/">
-              <button className="btn btn-dark">Login</button>
-            </a>
+          <ul className="navbar-right d-flex">
             <li>
-              <a href="/">
+              <Link to="/cart">
                 <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/wishlist">
                 <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/user profile/user_profile.html">
+              <Link to="/user-profile">
                 <img
                   src="https://picsum.photos/id/111/200/300"
                   alt="navbar-img"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Homepage.css";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -9,9 +10,9 @@ const Homepage = () => {
           <ul className="navbar nav-fixed d-flex">
             <div className="d-flex">
               <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-              <a href="/">
+              <Link to="/">
                 <p className="nav-title">Cars Store</p>
-              </a>
+              </Link>
             </div>
             <div className="search-container d-flex">
               <input
@@ -24,22 +25,22 @@ const Homepage = () => {
             </div>
             <ul className="navbar-right d-flex">
               <li>
-                <a href="/">
+                <Link to="/cart">
                   <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/wishlist">
                   <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/user-profile">
                   <img
                     src="https://picsum.photos/id/111/200/300"
                     alt="navbar-img"
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </ul>
@@ -52,9 +53,9 @@ const Homepage = () => {
                 Cars Store is a dedicated multi-brand online car showroom. It is
                 Indias largest market place for online car shopping!
               </p>
-              <a href="/">
+              <Link to="/product-listing">
                 <button className="btn btn-primary">Explore Now &#8594;</button>
-              </a>
+              </Link>
             </div>
             <div className="header-column">
               <img
