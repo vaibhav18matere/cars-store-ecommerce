@@ -10,6 +10,7 @@ import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Password from "./pages/Auth/Password";
 import Error from "./pages/Error/Error";
+import About from "./pages/Know More/About";
 function App() {
   return (
     <>
@@ -18,11 +19,12 @@ function App() {
         <Route path="/product-listing" element={<ProductListing />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/product" element={<SingleProduct />} />
+        <Route path="/product/:_productId" element={<SingleProduct />} />
         <Route path="/user-profile" element={<UserProfile />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password" element={<Password />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
