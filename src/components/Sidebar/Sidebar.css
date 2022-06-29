@@ -1,3 +1,9 @@
+.middleSection{
+    margin-top: 80px;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+}
 .sidebar{
     overflow: auto;
     padding: 0.5rem;
@@ -46,47 +52,4 @@
     align-items: center;
     gap: 0.2rem;
     margin: 0.5rem;
-}
-/* main-content-styling */
-.content-box{
-    padding: 2rem;
-    flex: 1;
-    overflow: auto;
-}
-.content-box::-webkit-scrollbar{
-    display: none;
-}
-.product-container::-webkit-scrollbar{
-    display: none;
-}
-.product-container{
-    margin-top: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-    height: 85vh;
-    overflow: auto;
-    scroll-margin-top: 1rem;
-    padding: 1rem;
-}
-.car-card{
-    box-shadow: 0 0 2px 1px var(--white);
-    border: 2px solid var(--secondary-light);
-    overflow: hidden;
-    height: fit-content;
-    padding-bottom: 0;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-.card_img img:hover{
-    transform: scale(1.1);
-}
-h3, .car-price-div{
-    text-align: center;
-}
-.car-price{
-    letter-spacing: 0.125rem;
-}
-.add-cart-btn{
-    justify-content: center;
-    margin: 0.8rem;
 }
