@@ -1,60 +1,29 @@
 import React from "react";
 import "./SingleProduct.css";
-import { Link } from "react-router-dom";
+import "../../backend/db/products";
+import Navbar from "../../components/Navbar/Navbar";
+import { useParams } from "react-router-dom";
 
-const SingleProduct = () => {
+const SingleProduct = ({
+  _id,
+  title,
+  price,
+  model,
+  category,
+  image,
+  description,
+}) => {
+  const { _productId } = useParams();
   return (
     <div>
-      <div className="navbar-container">
-        <ul className="navbar nav-fixed d-flex">
-          <div className="d-flex">
-            <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-            <Link to="/">
-              <p className="nav-title">Cars Store</p>
-            </Link>
-          </div>
-          <div className="search-container d-flex">
-            <input
-              type="text"
-              name="search"
-              className="search-bar"
-              placeholder="Search for car"
-            />
-            <i className="fa fa-search fa-2x" aria-hidden="true"></i>
-          </div>
-          <ul className="navbar-right d-flex">
-            <li>
-              <Link to="/cart">
-                <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="/wishlist">
-                <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="/user-profile">
-                <img
-                  src="https://picsum.photos/id/111/200/300"
-                  alt="navbar-img"
-                />
-              </Link>
-            </li>
-          </ul>
-        </ul>
-      </div>
+      <Navbar />
       <div className="single-card-container flex-center">
         <div className="single-card flex-center">
           <div className="single-card-left">
-            <img
-              className="single-card-img"
-              src="https://picsum.photos/id/111/300/300"
-              alt="car-img"
-            />
+            <img className="single-card-img" src={image} alt="carImg" />
           </div>
           <div className="single-card-right display-col-centre">
-            <h3 className="single-card-title-header">Woplmh C-Retro</h3>
+            <h3 className="single-card-title-header">{_productId}</h3>
             <p className="para-sm msg">
               <i className="fa fa-bolt" aria-hidden="true"></i> Hurry , Only Few
               Left !
@@ -73,10 +42,10 @@ const SingleProduct = () => {
             </span>
             <div className="other-info">
               <ul>
-                <li className="display-col-centre">Modal : Woplmh </li>
-                <li className="display-col-centre">Category : C-Retro</li>
-                <li className="display-col-centre">Fuel : Petrol</li>
-                <li className="display-col-centre">Color : Grey</li>
+                <li className="display-col-centre">{title}</li>
+                <li className="display-col-centre">{category}</li>
+                <li className="display-col-centre">{model}</li>
+                <li className="display-col-centre">{description}</li>
                 <li className="display-col-centre">
                   <div className="star-ratings">
                     <i className="fa fa-star"></i>
@@ -87,7 +56,7 @@ const SingleProduct = () => {
                   </div>
                 </li>
                 <div className="price">
-                  <p className="disc-price">Price : $8000</p>
+                  <p className="disc-price">{price}</p>
                   <p className="actual-price">$16000</p>
                   <p className="price-percentage">(50% OFF)</p>
                 </div>
