@@ -75,7 +75,7 @@ const ProductListing = () => {
                   className="checkbox-input"
                   value=""
                 />
-                <span>Volkswagen models</span>
+                <span>SUV's</span>
               </label>
               <label className="select-input">
                 <input
@@ -84,7 +84,7 @@ const ProductListing = () => {
                   className="checkbox-input"
                   value=""
                 />
-                <span>Toyota models</span>
+                <span>Super Sports</span>
               </label>
               <label className="select-input">
                 <input
@@ -93,7 +93,7 @@ const ProductListing = () => {
                   className="checkbox-input"
                   value=""
                 />
-                <span>Daimler models</span>
+                <span>Trucks</span>
               </label>
               <label className="select-input">
                 <input
@@ -102,7 +102,7 @@ const ProductListing = () => {
                   className="checkbox-input"
                   value=""
                 />
-                <span>Ford Motor</span>
+                <span>Electric and Hybrid</span>
               </label>
             </div>
             <div className="filtering-option">
@@ -169,33 +169,32 @@ const ProductListing = () => {
         </div>
         <div className="content-box">
           <div className="product-container d-flex">
-            {products.map(({ title, price, model, category, img }) => (
-              <div className="car-card">
-                <div className="card_img">
-                  <figure>
-                    <Link to="/product">
-                      <img
-                        src="https://picsum.photos/id/111/200/300"
-                        alt="carImage"
-                      />
-                    </Link>
-                  </figure>
-                  <div className="card_info">
-                    <h3>{title}</h3>
-                    <div className="car-price-div">
-                      <span className="car-price">
-                        Price : <span className="active_item">{price}</span>
-                      </span>
+            {products.map(
+              ({ title, price, model, category, image, description }) => (
+                <div className="car-card">
+                  <div className="card_img">
+                    <figure>
+                      <Link to="/product">
+                        <img src={image} alt="carImage" />
+                      </Link>
+                    </figure>
+                    <div className="card_info">
+                      <h3>{title}</h3>
+                      <div className="car-price-div">
+                        <span className="car-price">
+                          Price : <span className="active_item">{price}</span>
+                        </span>
+                      </div>
                     </div>
                   </div>
+                  <div className="add-cart-btn d-flex align-center font_1r">
+                    <button className="btn btn-primary flex-1">
+                      Add to cart
+                    </button>
+                  </div>
                 </div>
-                <div className="add-cart-btn d-flex align-center font_1r">
-                  <button className="btn btn-primary flex-1">
-                    Add to cart
-                  </button>
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>
@@ -203,24 +202,3 @@ const ProductListing = () => {
   );
 };
 export default ProductListing;
-
-<div className="car-card">
-  <div className="card_img">
-    <figure>
-      <Link to="/product">
-        <img src="https://picsum.photos/id/111/200/300" alt="" />
-      </Link>
-    </figure>
-    <div className="card_info">
-      <h3>Woplmh CRetro Vintage</h3>
-      <div className="car-price-div">
-        <span className="car-price">
-          Price : <span className="active_item">$8000</span>
-        </span>
-      </div>
-    </div>
-  </div>
-  <div className="add-cart-btn d-flex align-center font_1r">
-    <button className="btn btn-primary flex-1">Add to cart</button>
-  </div>
-</div>;
