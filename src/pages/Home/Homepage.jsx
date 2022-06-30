@@ -1,60 +1,25 @@
 import React from "react";
 import "./Homepage.css";
+import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Homepage = () => {
   return (
     <>
       <div className="homepage">
-        <div className="navbar-container">
-          <ul className="navbar nav-fixed d-flex">
-            <div className="d-flex">
-              <i className="fa fa-car hamberg-btn" aria-hidden="true"></i>
-              <a href="/">
-                <p className="nav-title">Cars Store</p>
-              </a>
-            </div>
-            <div className="search-container d-flex">
-              <input
-                type="text"
-                name="search"
-                className="search-bar"
-                placeholder="Search for car"
-              />
-              <i className="fa fa-search fa-2x" aria-hidden="true"></i>
-            </div>
-            <ul className="navbar-right d-flex">
-              <li>
-                <a href="/">
-                  <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <img
-                    src="https://picsum.photos/id/111/200/300"
-                    alt="navbar-img"
-                  />
-                </a>
-              </li>
-            </ul>
-          </ul>
-        </div>
+        <Navbar />
         <div className="homepage-container">
           <div className="row">
             <div className="header-column">
-              <h4>One stop solution for buying cars online, hustle free!</h4>
+              <h4>Shipping Cars</h4>
+              <h4>Shipping Happiness</h4>
               <p>
                 Cars Store is a dedicated multi-brand online car showroom. It is
                 Indias largest market place for online car shopping!
               </p>
-              <a href="/">
+              <Link to="/product-listing">
                 <button className="btn btn-primary">Explore Now &#8594;</button>
-              </a>
+              </Link>
             </div>
             <div className="header-column">
               <img
@@ -152,35 +117,6 @@ const Homepage = () => {
                   <li>Blogs Posts</li>
                   <li>Career Section</li>
                   <li>Terms and Conditions</li>
-                </ul>
-              </div>
-              <div className="footer-column4">
-                <h4 className="txt-space">Follow us on</h4>
-                <ul>
-                  <li>
-                    <a
-                      href="https://twitter.com/vaibhav_matere"
-                      className="twitter"
-                    >
-                      Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/vaibhav18matere"
-                      className="github"
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vaibhavmatere/"
-                      className="linkedin"
-                    >
-                      LinkedIn
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>

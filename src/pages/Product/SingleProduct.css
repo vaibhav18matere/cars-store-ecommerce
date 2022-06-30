@@ -1,0 +1,47 @@
+.single-card-container {
+    margin-top: 5rem;
+    height: 100vh;
+}
+.single-card{
+    display: flex;
+    box-shadow: var(--dark) 0px 5px 15px;
+    padding: 1.5rem;
+}
+.single-card-img{
+    width: 15rem;
+    height: 20rem;
+}
+.single-card-right{
+    gap: 0.5rem
+}
+.single-card-title-header{
+    font-size: 1.3rem;
+}
+.price{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+.star-ratings{
+    color: var(--alert);
+}
+.single-card-right .msg{
+    color:var(--danger);
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 1rem;
+}
+.single-card-right .tag-msg,
+.other-info{
+    font-size: 0.8rem;
+}
+.other-info li{
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+.single-card-right .add-cart, .wishlist-btn{
+    margin: 0px;
+    padding: 0.4rem 1rem
+}
+.tag-msg .fa-tag{
+    color: var(--primary);
+}

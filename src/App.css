@@ -26,7 +26,7 @@ html,body{
 
 /* search component for every page*/
 .search-container{
-    flex-basis: 23%;
+    flex-basis: 15%;
     border-radius: 1.5rem;
     background: var(--white)
  } 

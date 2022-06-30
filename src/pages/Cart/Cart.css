@@ -1,0 +1,117 @@
+.cart-container {
+    height: 90vh;
+}
+.cart-main-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.horizontal-container{
+    margin-bottom: 3rem;
+}
+.cart-title-number{
+    margin-top: 3rem;
+}
+.cart-sider{
+    display: flex;
+    gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.cart-manage-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+.cards{
+    cursor: pointer;
+    box-shadow: var(--secondary-light) 0px 5px 15px;
+}
+.card-img{
+    max-width: 100%;
+    object-fit: cover;
+    width:100%;
+    border-radius: 0.5remx;
+}
+.cart-description{
+    text-align: center;
+    color:var(--secondary-light);
+}
+.price{
+    padding: 0;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.price p{
+    text-align: justify;
+    line-height: 1.75rem;
+    display: inline;
+    padding-right: 0.45rem;
+}
+.price .actual-price{
+    text-decoration: line-through;
+    color:var(--secondary-light);
+}
+.price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: var(--secondary-light) 0px 8px 30px 0px;
+    height: fit-content;
+}
+.price .price-percentage{
+    color:var(--primary);
+}
+.qty{
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    border: 1px solid #d8cccc;
+    border-radius: 1.5rem;
+}
+.cart-btns .btn{
+    padding: 5px;
+    margin: 15px;
+}
+.price-totalAmt{
+    border-top: 1px solid var(--secondary-light);
+    border-bottom: 1px solid var(--secondary-light);
+    padding: 0.5rem 0;
+}
+.price-calculate{
+    border-top: 1px solid var(--secondary-light);
+}
+.price-calculate ul {
+    margin-top: 0.5rem;
+}
+.price-details ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.coupon-btn{
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+}
+.coupon{
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: 1px solid var(--secondary-light);
+}
+.order-placed{
+    color: var(--white);
+    text-decoration: none;
+}
