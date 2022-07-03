@@ -11,14 +11,14 @@ const ProductListing = () => {
       <Navbar />
       <section className="middleSection">
         <Sidebar />
-        <div className="content-box">
+        <div className="content-box"> 
           <div className="product-container d-flex">
-            {products.map(({ _id, title, price, image }) => (
+            {products.map(({ _id, title, price, img }) => (
               <div className="car-card">
                 <div className="card_img">
                   <figure>
                     <Link to={`/product/${_id}`}>
-                      <img src={image} alt="carImage" />
+                      <img src={img} alt="carImage" />
                     </Link>
                   </figure>
                   <div className="card_info">
@@ -31,7 +31,7 @@ const ProductListing = () => {
                   </div>
                 </div>
                 <div className="add-cart-btn d-flex align-center font_1r">
-                  <button className="btn btn-primary flex-1">
+                  <button className="btn btn-primary flex-1 add-to-card">
                     Add to cart
                   </button>
                 </div>

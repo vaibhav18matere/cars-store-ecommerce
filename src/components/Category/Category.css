@@ -1,0 +1,28 @@
+.featued-products-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.featued-products-row p {
+    text-align: center;
+}
+
+.category-item {
+    border-radius: 50%;
+    flex-wrap: wrap;
+    height: 11.875rem;
+    width: 11.875rem;
+    padding: 2rem 1rem 0;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    cursor: pointer;
+    box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+}
+
+.category-item-list {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
