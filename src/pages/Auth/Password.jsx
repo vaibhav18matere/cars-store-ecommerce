@@ -59,13 +59,13 @@ const Password = () => {
             </div>
           </div>
           <div className="btn btn-primary">
-            <a href="/" target="_blank" className="link-btn">
+            <Link to="/password" className="link-btn">
               Reset Password
-            </a>
+            </Link>
           </div>
           <div className="auth-secondary-btn">
             <i className="fa fa-chevron-left" aria-hidden="true"></i>
-            <a href="./"> Back to Sign In</a>
+            <Link to="/login"> Back to Log In</Link>
           </div>
         </div>
       </div>
