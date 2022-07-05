@@ -1,9 +1,12 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useAuth } from "../../contexts/auth-context";
 const Navbar = () => {
   const getActiveStyle = ({ isActive }) => ({
     color: isActive ? "black" : "white",
   });
+
+  const { isLoggedIn, setIsLoggedIn } = useAuth();
   return (
     <>
       <div className="navbar-container">
@@ -17,10 +20,6 @@ const Navbar = () => {
           <NavLink style={getActiveStyle} to="/product-listing">
             Products
           </NavLink>
-          <NavLink style={getActiveStyle} to="/about">
-            About
-          </NavLink>
-          {/* <NavLink style={getActiveStyle}>About</NavLink> */}
           <div className="search-container d-flex">
             <input
               type="text"
@@ -32,22 +31,25 @@ const Navbar = () => {
           </div>
           <ul className="navbar-right d-flex">
             <li>
-              <Link to="/cart">
+              <NavLink to="/cart">
                 <i className="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/wishlist">
+              <NavLink to="/wishlist">
                 <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/user-profile">
+              <NavLink to="/user-profile">
                 <img
                   src="https://picsum.photos/id/111/200/300"
                   alt="navbar-img"
                 />
-              </Link>
+              </NavLink>
+              <button onClick={() => setIsLoggedIn((login) => !login)}>
+                {isLoggedIn ? "Logout" : "Login"}
+              </button>
             </li>
           </ul>
         </ul>

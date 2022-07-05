@@ -10,22 +10,42 @@ import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Password from "./pages/Auth/Password";
 import Error from "./pages/Error/Error";
-import About from "./pages/Know More/About";
+import RequiresAuth from "./pages/Auth/RequiresAuth";
 function App() {
   return (
     <>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/product-listing" element={<ProductListing />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/product/:_productId" element={<SingleProduct />} />
-        <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/product/:productId" element={<SingleProduct />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password" element={<Password />} />
-        <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
+        <Route
+          path="/cart"
+          element={
+            <RequiresAuth>
+              <Cart />
+            </RequiresAuth>
+          }
+        />
+        <Route
+          path="/wishlist"
+          element={
+            <RequiresAuth>
+              <Wishlist />
+            </RequiresAuth>
+          }
+        />
+        <Route
+          path="/user-profile"
+          element={
+            <RequiresAuth>
+              <UserProfile />
+            </RequiresAuth>
+          }
+        />
       </Routes>
     </>
   );

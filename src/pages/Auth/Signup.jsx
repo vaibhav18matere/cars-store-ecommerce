@@ -73,15 +73,15 @@ const Signup = () => {
               </label>
             </div>
             <div className="btn btn-primary text-center">
-              <a href="/" className="link-btn">
+              <Link to="/signup" className="link-btn">
                 Create New Account
-              </a>
+              </Link>
             </div>
             <div className="auth-secondary-btn text-center">
-              <a href="/">
-                Already have an account{" "}
+              <Link to="/login">
+                Already have an account
                 <i className="fa fa-chevron-right" aria-hidden="true"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

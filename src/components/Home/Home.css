@@ -1,0 +1,29 @@
+.homepage-container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: auto;
+    max-width: 80rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4.375rem;
+}
+
+.header-column {
+    flex-basis: 50%;
+    min-width: 18rem;
+}
+
+.header-column img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.header-column h4 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 25px 0;
+}

@@ -74,8 +74,11 @@
     overflow: hidden;
     height: fit-content;
     padding-bottom: 0;
-    margin: 0.5rem;
-    cursor: pointer;
+    margin: 0.4rem;
+}
+.card_img figure img {
+    width: 250px;
+    height: 250px;
 }
 .card_img img:hover{
     transform: scale(1.1);
@@ -88,5 +91,5 @@ h3, .car-price-div{
 }
 .add-cart-btn{
     justify-content: center;
-    margin: 0.8rem;
+    margin: 0.5rem;
 }
