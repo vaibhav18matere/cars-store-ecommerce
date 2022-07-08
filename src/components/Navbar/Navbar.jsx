@@ -47,7 +47,10 @@ const Navbar = () => {
                   alt="navbar-img"
                 />
               </NavLink>
-              <button onClick={() => setIsLoggedIn((login) => !login)}>
+              <button
+                className="btn btn-primary text-center"
+                onClick={() => setIsLoggedIn((login) => !login)}
+              >
                 {isLoggedIn ? "Logout" : "Login"}
               </button>
             </li>
