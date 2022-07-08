@@ -1,8 +1,14 @@
 import React from "react";
 import "./auth.css";
 import Navbar from "../../components/Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { useAuth } from "./../../contexts/auth-context";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 const Login = () => {
+  const { isLoggedIn, setIsLoggedIn } = useAuth();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <div>
       <Navbar />
@@ -13,7 +19,7 @@ const Login = () => {
           </div>
           <div className="auth-main display-col-centre">
             <div className="auth-email">
-              <label for="mail">Enter your e-mail</label>
+              <label htmlFor="mail">Enter your e-mail</label>
               <input
                 placeholder="user123@gmail.com"
                 className="text-input"
@@ -21,7 +27,7 @@ const Login = () => {
               />
             </div>
             <div className="auth-pwd">
-              <label for="pwd">Enter your password</label>
+              <label htmlFor="pwd">Enter your password</label>
               <input
                 placeholder="*********"
                 className="pwd-input"
@@ -40,11 +46,16 @@ const Login = () => {
               </label>
               <Link to="/password">Forgot your Password?</Link>
             </div>
-
             <div className=" btn btn-primary text-center">
-              <Link to="/login" className="link-btn">
-                Login
-              </Link>
+              <div
+                className="link-btn"
+                onClick={() => {
+                  setIsLoggedIn((isLoggedIn) => !isLoggedIn);
+                  navigate(location.state.from.pathname);
+                }}
+              >
+                {isLoggedIn ? "logout" : "login"}
+              </div>
             </div>
             <div className="auth-secondary-btn text-center">
               <Link to="/signup">
